@@ -1,1 +1,4 @@
-# iitimii.github.io
+# This is Me
+
+## Education
+Covenant University

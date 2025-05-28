@@ -4,6 +4,11 @@
 ## Education
 Covenant University
 
+## Publications 
+### Journal Papers
+with images
+### Conference Papers
+
 ## Research
 
 ## Projects

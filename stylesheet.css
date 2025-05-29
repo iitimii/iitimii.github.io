@@ -103,10 +103,19 @@ h2 {
 }
 
 .name {
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 40px;
+  /* font-weight: bold; */
+}
+
+.email {
+  /* padding-top: 20px; */
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  /* font-weight: bold; */
 }
 
 .one {

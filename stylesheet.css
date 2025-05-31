@@ -110,6 +110,13 @@ h2 {
   /* font-weight: bold; */
 }
 
+.name_info {
+  /* italics */
+  font-style: italic;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
 .email {
   /* padding-top: 20px; */
   margin: 0;

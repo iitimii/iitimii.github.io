@@ -27,9 +27,8 @@
                   <p class="name" style="text-align: center;">
                     Oluwatimilehin Owolabi
                   </p>
-                  <!-- <p class="email" style="text-align:center;font-size:small">
-                  timilehin [dot] owolabi [at] stu [dot] cu [dot] edu [dot] ng
-                </p> -->
+                  <!-- <p class="name_info" style="text-align: center;">Also appears as Timilehin or Timi</p> -->
+                  <!-- <p class="email" style="text-align:center;font-size:small"> timilehin [dot] owolabi [at] stu [dot] cu [dot] edu [dot] ng </p> -->
                   <p>
                     I'm an undergraduate Electrical Engineering student at <a href="https://www.covenantuniversity.edu.ng/">Covenant University</a>.  
                     I lead the Robotics Research Team for <a href="https://gdg.community.dev/gdg-on-campus-covenant-university-ota-nigeria/">Google Developer Groups on Campus</a>, where we work on
@@ -276,25 +275,25 @@
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-              <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()" bgcolor="#ffffd0">
+              <tr onmouseout="multi_quad_stop()" onmouseover="multi_quad_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='bolt3d_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/bolt3d.mp4" type="video/mp4">
+                    <div class="two" id='multi_quad_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/multi_quad.mp4" type="video/mp4">
                         Your browser does not support the video tag.
 
                       </video></div>
-                    <img src='images/bolt3d.jpg' width="160">
+                    <img src='images/multi_quad.png' width="160">
                   </div>
                   <script type="text/javascript">
-                    function bolt3d_start() {
-                      document.getElementById('bolt3d_image').style.opacity = "1";
+                    function multi_quad_start() {
+                      document.getElementById('multi_quad_image').style.opacity = "1";
                     }
 
-                    function bolt3d_stop() {
-                      document.getElementById('bolt3d_image').style.opacity = "0";
+                    function multi_quad_stop() {
+                      document.getElementById('multi_quad_image').style.opacity = "0";
                     }
-                    bolt3d_stop()
+                    multi_quad_stop()
                   </script>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
@@ -319,45 +318,38 @@
                 </td>
               </tr>
 
-              <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()">
+              <tr onmouseout="auto_drone_stop()" onmouseover="auto_drone_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='bolt3d_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/bolt3d.mp4" type="video/mp4">
+                    <div class="two" id='auto_drone_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/auto_drone.mp4" type="video/mp4">
                         Your browser does not support the video tag.
 
                       </video></div>
-                    <img src='images/bolt3d.jpg' width="160">
+                    <img src='images/auto_drone.png' width="160">
                   </div>
                   <script type="text/javascript">
-                    function bolt3d_start() {
-                      document.getElementById('bolt3d_image').style.opacity = "1";
+                    function auto_drone_start() {
+                      document.getElementById('auto_drone_image').style.opacity = "1";
                     }
 
-                    function bolt3d_stop() {
-                      document.getElementById('bolt3d_image').style.opacity = "0";
+                    function auto_drone_stop() {
+                      document.getElementById('auto_drone_image').style.opacity = "0";
                     }
-                    bolt3d_stop()
+                    auto_drone_stop()
                   </script>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
-                  <a href="https://iopscience.iop.org/article/10.1088/2631-8695/adc5de/meta">
-                    <span class="papertitle">Practical Trade-offs in Neural Network Optimization: Brute Force Search and Gradient Descent</span>
+                  <a href="https://github.com/iitimii/Autonomous-Delivery-Drone">
+                    <span class="papertitle">Autonomous Delivery Drone</span>
                   </a>
                   <br>
-                  <a href="https://scholar.google.com/citations?user=O3zFs20AAAAJ&hl=en">Tobiloba Emmanuel Somefun</a>,
-                  <strong>Timilehin Owolabi</strong>,
-                  <a href="https://www.uj.ac.za/members/dr-omowunmi-mary-longe/">Omowunmi Mary Longe</a>
+                  <strong>Timilehin Owolabi</strong>
                   <br>
-                  <em>Engineering Research Express</em>, 2025
-                  <br>
-                  <a href="https://github.com/iitimii/Brute-Force-Optimization-for-Neural-Networks">project website</a>
-                  /
-                  <a href="https://iopscience.iop.org/article/10.1088/2631-8695/adc5de/pdf">PDF</a>
+                  <a href="https://github.com/iitimii/Autonomous-Delivery-Drone">code</a>
                   <p></p>
                   <p>
-                    This work compares brute force and gradient descent optimization in neural networks, showing that brute force achieves better accuracy and lower memory usage, while gradient descent offers faster convergence—highlighting the potential of hybrid methods for more adaptable and efficient learning.
-                  </p>
+                    Currently implementing Gaussian Process Model Predictive Control.
                 </td>
               </tr>
               </tbody>
@@ -379,6 +371,7 @@
 
 
               <!-- <tr>
+                Invited Talks
                 <td align="center" style="padding:16px;width:20%;vertical-align:middle">
                   <div class="colored-box" style="background-color: #fcb97d;">
                     <h2>Micropapers</h2>

@@ -402,6 +402,46 @@
                 </td>
               </tr>
 
+              <tr onmouseout="turtleBot_stop()" onmouseover="turtleBot_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='turtleBot_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/turtleBot.mp4" type="video/mp4" width="160">
+                        Your browser does not support the video tag.
+
+                      </video></div>
+                    <img id="turtleBot_image2" src='images/turtleBot.png' width="160" height="160">
+                  </div>
+                  <script type="text/javascript">
+                    function turtleBot_start() {
+                      // document.getElementById('turtleBot_image').style.opacity = "1";
+                      // document.getElementById('turtleBot_image2').style.opacity = "0";
+                    }
+
+                    function turtleBot_stop() {
+                      // document.getElementById('turtleBot_image').style.opacity = "0";
+                      // document.getElementById('turtleBot_image2').style.opacity = "1";
+                    }
+                    turtleBot_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/ROS2-AutonomousRobotCar">
+                    <span class="papertitle">TurtleBot</span>
+                  </a>
+                  <br>
+                  <strong>Timilehin Owolabi</strong>
+                  <br>
+                  2024
+                  <br>
+                  <a href="https://github.com/iitimii/ROS2-AutonomousRobotCar">code</a>
+                  <p></p>
+                  <p>
+                    Simulates a TurtleBot in Gazebo with precise motion control via PID and robust localization using an Extended Kalman Filter, all built on the ROS 2 ecosystem.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="camAI_stop()" onmouseover="camAI_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">

@@ -132,7 +132,7 @@
                         Your browser does not support the video tag.
 
                       </video></div>
-                    <img src='images/search_vs_grad.png' width="160">
+                    <img src='images/search_vs_grad.png' width="160" height="160">
                   </div>
                   <script type="text/javascript">
                     function search_grad_start() {
@@ -279,19 +279,21 @@
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='multi_quad_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/multi_quad.mp4" type="video/mp4">
+                        <source src="images/multi_quad.mp4" type="video/mp4" width="160">
                         Your browser does not support the video tag.
 
                       </video></div>
-                    <img src='images/multi_quad.png' width="160">
+                    <img id="multi_quad_image2" src='images/cf2.png' width="160">
                   </div>
                   <script type="text/javascript">
                     function multi_quad_start() {
                       document.getElementById('multi_quad_image').style.opacity = "1";
+                      document.getElementById('multi_quad_image2').style.opacity = "0";
                     }
 
                     function multi_quad_stop() {
                       document.getElementById('multi_quad_image').style.opacity = "0";
+                      document.getElementById('multi_quad_image2').style.opacity = "1";
                     }
                     multi_quad_stop()
                   </script>
@@ -306,8 +308,8 @@
                   <a href="https://github.com/oladele-19">Oladele Omogboyega</a>,
                   <a href="https://scholar.google.com/citations?user=gU5hEtMAAAAJ&hl=en">Ayokunle Awelewa</a>
                   <br>
-                  <!-- <em>arXiv</em>, 2025
-                  <br> -->
+                  <em>Publishing soon!</em>, 2025
+                  <br>
                   <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">code</a>
                   /
                   <a href="https://drive.google.com/file/d/12H9JaHcGgyAFLYkpVFZ91EULTH33NJkS/view?usp=sharing">PDF Draft</a>
@@ -326,7 +328,7 @@
                         Your browser does not support the video tag.
 
                       </video></div>
-                    <img src='images/auto_drone.png' width="160">
+                    <img src='images/auto_drone.png' width="160" height="160">
                   </div>
                   <script type="text/javascript">
                     function auto_drone_start() {
@@ -346,10 +348,174 @@
                   <br>
                   <strong>Timilehin Owolabi</strong>
                   <br>
+                  Ongoing
+                  <br>
                   <a href="https://github.com/iitimii/Autonomous-Delivery-Drone">code</a>
                   <p></p>
                   <p>
                     Currently implementing Gaussian Process Model Predictive Control.
+                </td>
+              </tr>
+
+              <tr onmouseout="panda_stop()" onmouseover="panda_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='panda_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/panda.mp4" type="video/mp4" width="160">
+                        Your browser does not support the video tag.
+
+                      </video></div>
+                    <img id="panda_image2" src='images/panda.png' width="160" height="160">
+                  </div>
+                  <script type="text/javascript">
+                    function panda_start() {
+                      // document.getElementById('panda_image').style.opacity = "1";
+                      // document.getElementById('panda_image2').style.opacity = "0";
+                    }
+
+                    function panda_stop() {
+                      // document.getElementById('panda_image').style.opacity = "0";
+                      // document.getElementById('panda_image2').style.opacity = "1";
+                    }
+                    panda_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/robot_arm">
+                    <span class="papertitle">VisionPick: Learning Visual Pick-and-Place with JAX and MuJoCo</span>
+                  </a>
+                  <br>
+                  <strong>Timilehin Owolabi*</strong>,
+                  <a href="https://ng.linkedin.com/in/omeyimi-mustapha-7b9202289">Omeyimi Mustapha</a>,
+                  <a href="https://github.com/Jojumiloju">Jomiloju Olubosi</a>,
+                  <a href="https://github.com/MobileGamer-hq">Duru Somtochukwu</a>
+                  <br>
+                  Ongoing
+                  <br>
+                  <a href="https://github.com/iitimii/robot_arm">code</a>
+                  <br>
+                  <em>*Project Lead. All authors were affiliated with Google Developer Groups on Campus, Covenant University.</em> 
+                  <br>
+                  <p>
+                    Vision-based manipulation policy using the DeepMind Control Suite, MuJoCo Playground, and JAX to enable reliable pick-and-place performance in simulation. The system learns to detect and lift boxes autonomously, laying a foundation for scalable robotic manipulation with minimal supervision.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="camAI_stop()" onmouseover="camAI_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='camAI_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/camAI.mp4" type="video/mp4" width="160">
+                        Your browser does not support the video tag.
+
+                      </video></div>
+                    <img id="camAI_image2" src='images/camAI.png' width="160" height="160">
+                  </div>
+                  <script type="text/javascript">
+                    function camAI_start() {
+                      // document.getElementById('camAI_image').style.opacity = "1";
+                      // document.getElementById('camAI_image2').style.opacity = "0";
+                    }
+
+                    function camAI_stop() {
+                      // document.getElementById('camAI_image').style.opacity = "0";
+                      // document.getElementById('camAI_image2').style.opacity = "1";
+                    }
+                    camAI_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/Cam-Ai">
+                    <span class="papertitle">CamAI: Real-Time Action Recognition and Emergency Alerts</span>
+                  </a>
+                  <br>
+                  <strong>Timilehin Owolabi</strong>,
+                  <a href="https://www.nelsonelijah.com/">Nelson Elijah</a>,
+                  <a href="https://jesse-paul.me/">Jesse-Paul Osemeke</a>
+                  <br>
+                  2023
+                  <br>
+                  <a href="https://github.com/iitimii/Cam-Ai">code</a>
+                  <p></p>
+                  <p>
+                    CamAI is an AI-powered camera system that tracks people, recognizes actions in real time, and sends alerts during emergencies. Whether it's boosting safety in traffic zones, securing infrastructure, or enhancing agricultural efficiency, CamAI turns passive monitoring into intelligent response.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="brain_stop()" onmouseover="brain_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='brain2_image'>
+                        <img src="images/brain.png" width="160">
+
+                      </video></div>
+                    <img src='images/brain.png' width="160" height="160">
+                  </div>
+                  <script type="text/javascript">
+                    function brain_start() {
+                      document.getElementById('brain2_image').style.opacity = "0";
+                    }
+
+                    function brain_stop() {
+                      document.getElementById('brain2_image').style.opacity = "0";
+                    }
+                    brain_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/Brain-Tumour-Segmentation-with-UNet">
+                    <span class="papertitle">3D Brain Tumor Segmentation</span>
+                  </a>
+                  <br>
+                  <strong>Timilehin Owolabi*</strong>,
+                  <a href="https://www.linkedin.com/in/collins-olawale-210b1a125/?originalSubdomain=ng">Collins Olawale</a>,
+                  <a href="https://ng.linkedin.com/in/ikeoluwa-ibitoye-04b561268">Ikeoluwa Ibitoye</a>
+                  <br>
+                  2023
+                  <br>
+                  <a href="https://github.com/iitimii/Brain-Tumour-Segmentation-with-UNet">code</a>
+                  /
+                  <a href="https://medium.com/@timiiowolabi/early-brain-tumor-detection-and-classification-with-computer-vision-638a593267b2">blog</a>
+                  <br>
+                  <em>*Led during internship at Zummit Africa. All authors were affiliated with Zummit Africa.</em> 
+                  <br>
+                  <p>A U-Net-based deep learning app for segmenting brain tumors (necrotic, edema, enhancing) in 3D MRI scans. Uses FLAIR and T1CE images, with a FastAPI backend and Streamlit frontend for easy interaction and visualization.
+                </td>
+              </tr>
+
+              <tr onmouseout="semantic_stop()" onmouseover="semantic_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='semantic2_image'>
+                        <img src="images/semantic2.png" width="160">
+
+                      </video></div>
+                    <img src='images/semantic.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function semantic_start() {
+                      document.getElementById('semantic2_image').style.opacity = "1";
+                    }
+
+                    function semantic_stop() {
+                      document.getElementById('semantic2_image').style.opacity = "0";
+                    }
+                    semantic_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/Semantic-Segmentation-for-Clothing">
+                    <span class="papertitle">ClothSegNet: Semantic Segmentation of Clothing via U-Net</span>
+                  </a>
+                  <br>
+                  <strong>Timilehin Owolabi</strong>
+                  <br>
+                  2023
+                  <br>
+                  <a href="https://github.com/iitimii/Semantic-Segmentation-for-Clothing">code</a>
+                  <p>A deep learning project that uses a U-Net model to segment clothing items from images of people. Whether it's shirts, pants, or mystery fashion choices, ClothSegNet finds the boundaries so your model doesn’t have to guess where the pants end and the fashion crimes begin. </p>
                 </td>
               </tr>
               </tbody>

@@ -10,11 +10,13 @@
   <link rel="stylesheet" type="text/css" href="stylesheet2.css">
 
 <body>
-  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table
+    style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -23,27 +25,38 @@
                       Oluwatimilehin Owolabi
                     </p>
                     <p class="name_info" style="text-align: center;">Also known as Timilehin or Timi</p>
-                    
+
                     <p>
-                      I'm an undergraduate Electrical Engineering student at <a href="https://www.covenantuniversity.edu.ng/">Covenant University</a>. 
-                      I lead the Robotics Research Team for <a href="https://gdg.community.dev/gdg-on-campus-covenant-university-ota-nigeria/">Google Developer Groups on Campus</a>, 
-                      where we advance reinforcement learning, vision-language-action models, and cost-effective robotic systems. 
-                      Previously, I collaborated with <a href="https://danielomeiza.github.io/">Dr. Daniel Omeiza</a> at the 
-                      <a href="https://ori.ox.ac.uk/">Oxford Robotics Institute</a> on autonomous driving and graph neural networks.
+                      I'm an undergraduate Electrical Engineering student at <a
+                        href="https://www.covenantuniversity.edu.ng/">Covenant University</a>.
+                      I lead the Robotics Research Team for <a
+                        href="https://gdg.community.dev/gdg-on-campus-covenant-university-ota-nigeria/">Google Developer
+                        Groups on Campus</a>,
+                      where we advance reinforcement learning, vision-language-action models, and cost-effective robotic
+                      systems.
+                      Previously, I collaborated with <a href="https://danielomeiza.github.io/">Dr. Daniel Omeiza</a> at
+                      the
+                      <a href="https://ori.ox.ac.uk/">Oxford Robotics Institute</a> on autonomous driving and graph
+                      neural networks.
                     </p>
-                    
+
                     <p>
-                      I'm deeply passionate about education and mentorship. Currently, I teach machine learning to undergraduate 
-                      and graduate women through <a href="https://www.apwen.org.ng/">APWEN</a>. As president of the 
-                      <a href="https://www.instagram.com/aeies_cu/">Association of Electrical and Information Engineering Students</a>, 
-                      I founded the AEIES student mentorship program to help students master engineering fundamentals from first principles.
+                      I'm deeply passionate about education and mentorship. Currently, I teach machine learning to
+                      undergraduate
+                      and graduate women through <a href="https://www.apwen.org.ng/">APWEN</a>. As president of the
+                      <a href="https://www.instagram.com/aeies_cu/">Association of Electrical and Information
+                        Engineering Students</a>,
+                      I founded the AEIES student mentorship program to help students master engineering fundamentals
+                      from first principles.
                     </p>
-                    
+
                     <div class="research-interest">
-                      <p><strong>Research Vision:</strong> To unify machine learning, control theory, and cognitive science in building 
-                      embodied AI systems that think, remember, and learn continuously—creating truly cognitive machines.</p>
+                      <p><strong>Research Vision:</strong> To unify machine learning, control theory, and cognitive
+                        science in building
+                        embodied AI systems that think, remember, and learn continuously—creating truly cognitive
+                        machines.</p>
                     </div>
-                    
+
                     <div class="contact-links">
                       <a href="mailto:timilehin.owolabi@stu.cu.edu.ng">Email</a>
                       <a href="data/Curriculum vitae from Oluwatimilehin Owolabi.pdf">CV</a>
@@ -54,12 +67,15 @@
                     </div>
                   </div>
                 </td>
-                
+
                 <td style="padding:2.5%;width:37%;max-width:37%">
-                  <div style="height: 600px; width: 400px; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                  <div
+                    style="height: 600px; width: 400px; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                     <a href="images/timi_full.png">
-                      <img id="profileImage" style="width:100%; height:100%; object-fit: cover; transition: opacity 0.4s ease; opacity: 1;" 
-                           alt="Oluwatimilehin Owolabi - Robotics Researcher" src="images/timi_full.png" class="hoverZoomLink">
+                      <img id="profileImage"
+                        style="width:100%; height:100%; object-fit: cover; transition: opacity 0.4s ease; opacity: 1;"
+                        alt="Oluwatimilehin Owolabi - Robotics Researcher" src="images/timi_full.png"
+                        class="hoverZoomLink">
                     </a>
                   </div>
                 </td>
@@ -69,15 +85,31 @@
                   let current = 0;
                   let imageHeight = 0;
                   let switched = false;
+                  let imagesLoaded = 0;
 
                   const imgEl = document.getElementById("profileImage");
+
+                  // Preload all images
+                  const preloadedImages = [];
+
+                  images.forEach((src, index) => {
+                    const img = new Image();
+                    img.src = src;
+                    img.onload = () => {
+                      imagesLoaded++;
+                      if (index === 0) {
+                        imageHeight = img.height;
+                      }
+                    };
+                    preloadedImages.push(img);
+                  });
 
                   imgEl.onload = () => {
                     imageHeight = imgEl.clientHeight;
                   };
 
                   document.addEventListener("mousemove", (e) => {
-                    if (e.clientY <= imageHeight) {
+                    if (imagesLoaded === images.length && e.clientY <= imageHeight) {
                       if (!switched) {
                         switched = true;
                         imgEl.style.opacity = 0;
@@ -97,27 +129,32 @@
                       }
                     }
                   });
+
                 </script>
               </tr>
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    My current research focuses on <strong>meta-learning for self-improving policies</strong> and 
-                    <strong>learning-based model predictive control</strong> for mobility and manipulation in legged and aerial robots. 
-                    These investigations serve as stepping stones toward my ultimate goal of understanding how to build truly cognitive systems.
+                    My current research focuses on <strong>meta-learning for self-improving policies</strong> and
+                    <strong>learning-based model predictive control</strong> for mobility and manipulation in legged and
+                    aerial robots.
+                    These investigations serve as stepping stones toward my ultimate goal of understanding how to build
+                    truly cognitive systems.
                   </p>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table
+            style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
               <tr onmouseout="fuzzy_stop()" onmouseover="fuzzy_start()" class="highlight-row">
@@ -148,19 +185,23 @@
                   <br>
                   <a href="https://scholar.google.com/citations?user=gU5hEtMAAAAJ&hl=en">Ayokunle Awelewa</a>,
                   <a href="https://scholar.google.com/citations?user=2EfkhzQAAAAJ&hl=en">Kayode Ojo</a>,
-                  <a href="https://www.linkedin.com/in/toluwa-abimbola-oladejo-9b350b162/">Toluwa Abimbola-Oladejo</a>, 
+                  <a href="https://www.linkedin.com/in/toluwa-abimbola-oladejo-9b350b162/">Toluwa Abimbola-Oladejo</a>,
                   <span class="author-highlight">Timilehin Owolabi</span>,
                   <a href="https://ww1.engineering.ukzn.ac.za/akshay-saha/">Akshay Saha</a>,
-                  <a href="https://www.bcu.ac.uk/computing-engineering-and-the-built-environment/faculty-staff/viranjay-srivastava">Viranjay Srivastava</a>
+                  <a
+                    href="https://www.bcu.ac.uk/computing-engineering-and-the-built-environment/faculty-staff/viranjay-srivastava">Viranjay
+                    Srivastava</a>
                   <br>
-                  <span class="venue-emphasis">IEEE International Conference on Science, Engineering and Business for Driving Sustainable Development Goals</span>, 2025
+                  <span class="venue-emphasis">IEEE International Conference on Science, Engineering and Business for
+                    Driving Sustainable Development Goals</span>, 2025
                   <br>
                   <span class="project-tag status-published">Accepted</span>
                   <br>
                   <a href="data/Awelewa_et_al._Manuscript_(Landmark_Conference).pdf">PDF</a>
                   <p>
-                    Developed and validated a Fuzzy-PID controller for single- and double-tank liquid level systems, 
-                    demonstrating superior performance over conventional PID control in managing nonlinearity, uncertainty, 
+                    Developed and validated a Fuzzy-PID controller for single- and double-tank liquid level systems,
+                    demonstrating superior performance over conventional PID control in managing nonlinearity,
+                    uncertainty,
                     and multivariable disturbances.
                   </p>
                 </td>
@@ -189,10 +230,11 @@
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
                   <a href="https://iopscience.iop.org/article/10.1088/2631-8695/adc5de/meta">
-                    <span class="papertitle">Practical Trade-offs in Neural Network Optimization: Brute Force Search vs. Gradient Descent</span>
+                    <span class="papertitle">Practical Trade-offs in Neural Network Optimization: Brute Force Search vs.
+                      Gradient Descent</span>
                   </a>
                   <br>
-                  <a href="https://scholar.google.com/citations?user=O3zFs20AAAAJ&hl=en">Tobiloba Emmanuel Somefun</a>, 
+                  <a href="https://scholar.google.com/citations?user=O3zFs20AAAAJ&hl=en">Tobiloba Emmanuel Somefun</a>,
                   <span class="author-highlight">Timilehin Owolabi</span>,
                   <a href="https://www.uj.ac.za/members/dr-omowunmi-mary-longe/">Omowunmi Mary Longe</a>
                   <br>
@@ -200,11 +242,13 @@
                   <br>
                   <span class="project-tag status-published">Published</span>
                   <br>
-                  <a href="https://github.com/iitimii/Brute-Force-Optimization-for-Neural-Networks">Code</a> / 
+                  <a href="https://github.com/iitimii/Brute-Force-Optimization-for-Neural-Networks">Code</a> /
                   <a href="https://iopscience.iop.org/article/10.1088/2631-8695/adc5de/pdf">PDF</a>
                   <p>
-                    Comprehensive comparison of brute force and gradient descent optimization in neural networks, revealing that 
-                    brute force achieves superior accuracy and lower memory usage while gradient descent offers faster convergence—
+                    Comprehensive comparison of brute force and gradient descent optimization in neural networks,
+                    revealing that
+                    brute force achieves superior accuracy and lower memory usage while gradient descent offers faster
+                    convergence—
                     highlighting opportunities for hybrid optimization strategies.
                   </p>
                 </td>
@@ -233,7 +277,8 @@
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
                   <a href="https://asric.africa/sites/default/files/2025-02/10%20ES%20Vol.%205%202024.pdf">
-                    <span class="papertitle">Enhancing Radiological Imaging for Improved Healthcare Outcomes Through High-Performance Hybrid Approach</span>
+                    <span class="papertitle">Enhancing Radiological Imaging for Improved Healthcare Outcomes Through
+                      High-Performance Hybrid Approach</span>
                   </a>
                   <br>
                   <a href="https://ng.linkedin.com/in/olumayowa-idowu-ba80b644">Olumayowa Idowu</a>,
@@ -241,7 +286,7 @@
                   <a href="https://funaab.edu.ng/staff/amusa-kamoli-akinwale/">Amusa Akinwale</a>,
                   <a href="https://scholar.google.com/citations?user=BpJKdbAAAAAJ&hl=en">Abolaji Ilori</a>,
                   Zou Xingze, Yubin Wang,
-                  <a href="https://www.linkedin.com/in/rasheedaiyedun/?originalSubdomain=de">Aiyedun Rasheed</a>, 
+                  <a href="https://www.linkedin.com/in/rasheedaiyedun/?originalSubdomain=de">Aiyedun Rasheed</a>,
                   <span class="author-highlight">Timilehin Owolabi</span>
                   <br>
                   <span class="venue-emphasis">ASRIC Journal on Engineering Sciences</span>, 2024
@@ -250,8 +295,10 @@
                   <br>
                   <a href="https://asric.africa/sites/default/files/2025-02/10%20ES%20Vol.%205%202024.pdf">PDF</a>
                   <p>
-                    Developed a hybrid radiological image enhancement technique combining unsharp masking, logarithmic transformation, 
-                    and adaptive histogram equalization, outperforming CLAHE and Wavelet-based methods in visual quality metrics—
+                    Developed a hybrid radiological image enhancement technique combining unsharp masking, logarithmic
+                    transformation,
+                    and adaptive histogram equalization, outperforming CLAHE and Wavelet-based methods in visual quality
+                    metrics—
                     providing a standardized, accurate, and cost-effective solution for medical imaging systems.
                   </p>
                 </td>
@@ -280,13 +327,14 @@
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
                   <a href="https://ieeexplore.ieee.org/abstract/document/10379321/">
-                    <span class="papertitle">Energy Optimization Algorithm for Reducing Energy Consumption in Smart Homes</span>
+                    <span class="papertitle">Energy Optimization Algorithm for Reducing Energy Consumption in Smart
+                      Homes</span>
                   </a>
                   <br>
                   <a href="https://scholar.google.com/citations?user=O3zFs20AAAAJ&hl=en">Tobiloba Somefun</a>,
                   <a href="https://ng.linkedin.com/in/adrian-igho-orere">Adrian Egbewe Igho-Orere</a>,
                   <a href="https://ace.covenantuniversity.edu.ng/ra-student.php?user=42">Comfort Somefun</a>,
-                  <a href="https://www.nelsonelijah.com/">Nelson Elijah</a>, 
+                  <a href="https://www.nelsonelijah.com/">Nelson Elijah</a>,
                   <span class="author-highlight">Timilehin Owolabi</span>,
                   <a href="https://scholar.google.com/citations?user=lDAAR6wAAAAJ&hl=en">Samson Ongbali</a>
                   <br>
@@ -296,8 +344,10 @@
                   <br>
                   <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10379321">PDF</a>
                   <p>
-                    Developed an intelligent home automation algorithm combining appliance scheduling with real-time environmental sensing 
-                    to optimize electricity consumption, achieving up to 68% energy savings in simulations—offering a scalable solution 
+                    Developed an intelligent home automation algorithm combining appliance scheduling with real-time
+                    environmental sensing
+                    to optimize electricity consumption, achieving up to 68% energy savings in simulations—offering a
+                    scalable solution
                     for residential energy reduction and smart grid integration.
                   </p>
                 </td>
@@ -306,20 +356,23 @@
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Featured Projects</h2>
                   <p>
-                    A selection of projects I'm particularly passionate about, spanning robotics, computer vision, and intelligent systems.
+                    A selection of projects I'm particularly passionate about, spanning robotics, computer vision, and
+                    intelligent systems.
                   </p>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table
+            style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
               <tr onmouseout="multi_quad_stop()" onmouseover="multi_quad_start()" class="highlight-row">
@@ -359,10 +412,12 @@
                   <span class="project-tag">Reinforcement Learning</span>
                   <span class="project-tag">Swarm Robotics</span>
                   <br>
-                  <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">Code</a> / 
-                  <a href="https://drive.google.com/file/d/12H9JaHcGgyAFLYkpVFZ91EULTH33NJkS/view?usp=sharing">Draft PDF</a>
+                  <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">Code</a> /
+                  <a href="https://drive.google.com/file/d/12H9JaHcGgyAFLYkpVFZ91EULTH33NJkS/view?usp=sharing">Draft
+                    PDF</a>
                   <p>
-                    Advanced control strategies for quadrotor swarms using adaptive, optimal, and learning-based approaches 
+                    Advanced control strategies for quadrotor swarms using adaptive, optimal, and learning-based
+                    approaches
                     with gym-pybullet-drones simulation environment.
                   </p>
                 </td>
@@ -397,7 +452,8 @@
                   <span class="author-highlight">Timilehin Owolabi*</span>, Victor Oduopara,
                   <a href="https://github.com/PontentialProgrammer">Ayotomiwa Oyewumi</a>, Isaac Odejimi,
                   <a href="https://ng.linkedin.com/in/omeyimi-mustapha-7b9202289">Omeyimi Mustapha</a>,
-                  <a href="https://www.millenniumfellows.org/fellow/2024/covenant/queendolin-effa-emmanuel-etta">Queendolin Etta</a>,
+                  <a href="https://www.millenniumfellows.org/fellow/2024/covenant/queendolin-effa-emmanuel-etta">Queendolin
+                    Etta</a>,
                   <a href="https://ng.linkedin.com/in/chukwudumebi-chukwuma-b481bb275">Chukwudumebi Chukwuma</a>,
                   <a href="https://github.com/Jojumiloju">Jomiloju Olubosi</a>,
                   <a href="https://github.com/MobileGamer-hq">Duru Somtochukwu</a>
@@ -410,8 +466,9 @@
                   <br>
                   <em>*Project Lead. Google Developer Groups on Campus, Covenant University</em>
                   <p>
-                    A cost-effective, 6-DOF 3D-printed robotic arm achieving performance comparable to commercial manipulators 
-                    like the WidowX 250S—matching reach, repeatability, and payload capacity at just 2.5% of the cost. 
+                    A cost-effective, 6-DOF 3D-printed robotic arm achieving performance comparable to commercial
+                    manipulators
+                    like the WidowX 250S—matching reach, repeatability, and payload capacity at just 2.5% of the cost.
                     Fully open-source for accessible research, education, and rapid prototyping.
                   </p>
                 </td>
@@ -658,8 +715,10 @@
                   </div>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:center">
-                  <a href="data/NSE Abeokuta AI Training.pdf">AI: Our Current Reality and Future Trajectory</a>, Nigerian Society of Engineers (NSE), 2024<br>
-                  <a href="data/Deep Learning Neural Networks.pdf">Deep Learning: Neural Networks</a>, Association of Professional Women Engineers of Nigeria (APWEN), 2024<br>
+                  <a href="data/NSE Abeokuta AI Training.pdf">AI: Our Current Reality and Future Trajectory</a>,
+                  Nigerian Society of Engineers (NSE), 2024<br>
+                  <a href="data/Deep Learning Neural Networks.pdf">Deep Learning: Neural Networks</a>, Association of
+                  Professional Women Engineers of Nigeria (APWEN), 2024<br>
                 </td>
               </tr>
 
@@ -671,10 +730,10 @@
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:center">
                   Machine Learning Tutor,
-                    Association of Professional Women Engineers of Nigeria, (2024-Present)
+                  Association of Professional Women Engineers of Nigeria, (2024-Present)
                   <br>
                   Robotics Instructor,
-                    Whitesands School, 2024
+                  Whitesands School, 2024
                 </td>
               </tr>
 

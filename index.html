@@ -60,7 +60,7 @@
                     <a href="https://x.com/iitiimii">X</a>
                   </p>
                 </td>
-                
+
                 <td style="padding:2.5%;width:37%;max-width:37%">
                   <div style="height: 370px; overflow: hidden; ">
                     <a href="images/timi_full.png">
@@ -400,13 +400,17 @@
               <tr onmouseout="auto_drone_stop()" onmouseover="auto_drone_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='auto_drone_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/auto_drone.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-
-                      </video></div>
+                    <div class="two" id='auto_drone_image'>
+                      <div class="video-square">
+                        <video muted autoplay loop>
+                          <source src="images/auto_drone.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
                     <img src='images/auto_drone.png' width="160" height="160">
                   </div>
+
                   <script type="text/javascript">
                     function auto_drone_start() {
                       document.getElementById('auto_drone_image').style.opacity = "1";
@@ -415,7 +419,8 @@
                     function auto_drone_stop() {
                       document.getElementById('auto_drone_image').style.opacity = "0";
                     }
-                    auto_drone_stop()
+
+                    auto_drone_stop();
                   </script>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
@@ -431,6 +436,7 @@
                   <p></p>
                   <p>
                     Currently implementing Gaussian Process Model Predictive Control.
+                  </p>
                 </td>
               </tr>
 
@@ -731,8 +737,10 @@
                   </div>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:center">
-                  <a href="data/NSE Abeokuta AI Training.pdf">AI: Our Current Reality and Future Trajectory</a>, Nigerian Society of Engineers (NSE), 2024<br>
-                  <a href="data/Deep Learning Neural Networks.pdf">Deep Learning: Neural Networks</a>, Association of Professional Women Engineers of Nigeria (APWEN), 2024<br>
+                  <a href="data/NSE Abeokuta AI Training.pdf">AI: Our Current Reality and Future Trajectory</a>,
+                  Nigerian Society of Engineers (NSE), 2024<br>
+                  <a href="data/Deep Learning Neural Networks.pdf">Deep Learning: Neural Networks</a>, Association of
+                  Professional Women Engineers of Nigeria (APWEN), 2024<br>
                 </td>
               </tr>
 
@@ -744,10 +752,10 @@
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:center">
                   Machine Learning Tutor,
-                    Association of Professional Women Engineers of Nigeria, (2024-Present)
+                  Association of Professional Women Engineers of Nigeria, (2024-Present)
                   <br>
                   Robotics Instructor,
-                    Whitesands School, 2024
+                  Whitesands School, 2024
                 </td>
               </tr>
 

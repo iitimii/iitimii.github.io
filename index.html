@@ -351,6 +351,51 @@
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="aloha_rep_stop()" onmouseover="aloha_rep_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='aloha_rep_image'>
+                      <div class="video-square">
+                        <video width=100% height=100% muted autoplay loop>
+                          <source src="images/aloha_rep.mp4" type="video/mp4" width="160">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                    <img id="aloha_rep_image2" src='images/aloha_rep.png' width="160" height="160">
+                  </div>
+                  <script type="text/javascript">
+                    function aloha_rep_start() {
+                      document.getElementById('aloha_rep_image').style.opacity = "1";
+                      document.getElementById('aloha_rep_image2').style.opacity = "0";
+                    }
+
+                    function aloha_rep_stop() {
+                      document.getElementById('aloha_rep_image').style.opacity = "0";
+                      document.getElementById('aloha_rep_image2').style.opacity = "1";
+                    }
+                    aloha_rep_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/aloha-vla">
+                    <span class="papertitle">ALOHA Replication: Bimanual Manipulation with OpenVLA-OFT</span>
+                  </a>
+                  <br>
+                  <strong>Timilehin Owolabi</strong>,
+                  <a href="https://jesse-paul.me/">Jesse-Paul Osemeke</a>,
+                  <a href="https://ng.linkedin.com/in/omeyimi-mustapha-7b9202289">Omeyimi Mustapha</a>
+                  <br>
+                  Ongoing
+                  <br>
+                  <a href="https://github.com/iitimii/aloha-vla">code</a>
+                  <p></p>
+                  <p>
+                    A replication of Stanford's ALOHA paper in simulation, integrating OpenVLA-OFT—an improved vision-language-action (VLA) model—to enable bimanual robotic manipulation. Original works: <a href="https://arxiv.org/abs/2401.02117">ALOHA</a>, <a href="https://arxiv.org/abs/2502.19645">OpenVLA-OFT</a>.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="multi_quad_stop()" onmouseover="multi_quad_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
@@ -480,7 +525,7 @@
                   <a href="https://github.com/Jojumiloju">Jomiloju Olubosi</a>,
                   <a href="https://github.com/MobileGamer-hq">Duru Somtochukwu</a>
                   <br>
-                  Ongoing
+                  2025
                   <br>
                   <a href="https://github.com/iitimii/Affordable-3D-Printed-Manipulator">code</a>
                   <br>

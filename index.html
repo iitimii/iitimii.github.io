@@ -135,6 +135,52 @@
           <table
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="multi_quad_stop()" onmouseover="multi_quad_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='multi_quad_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/multi_quad.mp4" type="video/mp4" width="160">
+                        Your browser does not support the video tag.
+
+                      </video></div>
+                    <img id="multi_quad_image2" src='images/cf2.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function multi_quad_start() {
+                      document.getElementById('multi_quad_image').style.opacity = "1";
+                      document.getElementById('multi_quad_image2').style.opacity = "0";
+                    }
+
+                    function multi_quad_stop() {
+                      document.getElementById('multi_quad_image').style.opacity = "0";
+                      document.getElementById('multi_quad_image2').style.opacity = "1";
+                    }
+                    multi_quad_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">
+                    <span class="papertitle">"Coordinated Control of Quadrotor Swarms: Classical, Adaptive, and Learning-Based Methods</span>
+                  </a>
+                  <br>
+                  <strong>Oluwatimilehin Owolabi</strong>,
+                  <a href="https://ng.linkedin.com/in/chukwudumebi-chukwuma-b481bb275">Chukwudumebi Chukwuma</a>,
+                  <a href="https://github.com/oladele-19">Oladele Omogboyega</a>,
+                  <a href="https://scholar.google.com/citations?user=gU5hEtMAAAAJ&hl=en">Ayokunle Awelewa</a>
+                  <br>
+                  <em>Under Review at IEEE Southern African Universities Power Engineering Conference
+(SAUPEC)</em>, 2026
+                  <br>
+                  <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">Code</a>
+                  /
+                  <a href="https://drive.google.com/file/d/1p4L1eJT4DQ-hWlWvim1cZ8-Jzl6jkgz_/view?usp=sharing">PDF
+                    </a>
+                  <p></p>
+                  <p>
+                    Adaptive, optimal, and learning-based control for quadrotor swarms using gym-pybullet-drones.
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="fuzzy_stop()" onmouseover="fuzzy_start()"> <!-- -->
                 <td style="padding:16px;width:20%;vertical-align:middle">
@@ -158,7 +204,7 @@
                   </script>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
-                  <a href="">
+                  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mJOLhAcAAAAJ&authuser=1&citation_for_view=mJOLhAcAAAAJ:2osOgNQ5qMEC">
                     <span class="papertitle">Fuzzy-PID Controller for Liquid Level Control of Tank Systems</span>
                   </a>
                   <br>
@@ -167,18 +213,13 @@
                   <a
                     href="https://www.linkedin.com/in/toluwa-abimbola-oladejo-9b350b162/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ng">Toluwa
                     Abimbola-Oladejo</a>,
-                  <strong>Timilehin Owolabi</strong>,
-                  <a href="https://ww1.engineering.ukzn.ac.za/akshay-saha/">Akshay Saha</a>,
-                  <a
-                    href="https://www.bcu.ac.uk/computing-engineering-and-the-built-environment/faculty-staff/viranjay-srivastava">Viranjay
-                    Srivastava</a>
+                  <strong>Timilehin Owolabi</strong>
                   <br>
-                  <em>IEEE International Conference on Science, Engineering and
-                    Business for Driving Sustainable Development Goals</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                  <em>NIPES-Journal of Science and Technology</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
                   <br>
                   <!-- <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">project website</a> -->
                   <!-- / -->
-                  <a href="data/Awelewa_et_al._Manuscript_(Landmark_Conference).pdf">PDF</a>
+                  <a href="https://journals.nipes.org/index.php/jstrissue/article/download/2506/1612">PDF</a>
                   <p></p>
                   <p>
                     Developed and tested a Fuzzy-PID controller for single- and double-tank liquid level systems,
@@ -221,7 +262,7 @@
                   <br>
                   <em>Engineering Research Express</em>, 2025
                   <br>
-                  <a href="https://github.com/iitimii/Brute-Force-Optimization-for-Neural-Networks">code</a>
+                  <a href="https://github.com/iitimii/Brute-Force-Optimization-for-Neural-Networks">Code</a>
                   /
                   <a href="https://iopscience.iop.org/article/10.1088/2631-8695/adc5de/pdf">PDF</a>
                   <p></p>
@@ -388,56 +429,10 @@
                   <br>
                   Ongoing
                   <br>
-                  <a href="https://github.com/iitimii/aloha-vla">code</a>
+                  <a href="https://github.com/iitimii/aloha-vla">Code</a>
                   <p></p>
                   <p>
                     A replication of Stanford's ALOHA paper in simulation, integrating OpenVLA-OFT—an improved vision-language-action (VLA) model—to enable bimanual robotic manipulation. Original works: <a href="https://arxiv.org/abs/2401.02117">ALOHA</a>, <a href="https://arxiv.org/abs/2502.19645">OpenVLA-OFT</a>.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="multi_quad_stop()" onmouseover="multi_quad_start()">
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='multi_quad_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/multi_quad.mp4" type="video/mp4" width="160">
-                        Your browser does not support the video tag.
-
-                      </video></div>
-                    <img id="multi_quad_image2" src='images/cf2.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function multi_quad_start() {
-                      document.getElementById('multi_quad_image').style.opacity = "1";
-                      document.getElementById('multi_quad_image2').style.opacity = "0";
-                    }
-
-                    function multi_quad_stop() {
-                      document.getElementById('multi_quad_image').style.opacity = "0";
-                      document.getElementById('multi_quad_image2').style.opacity = "1";
-                    }
-                    multi_quad_stop()
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">
-                    <span class="papertitle">Coordinated Control of Multi-Quadrotor Swarms</span>
-                  </a>
-                  <br>
-                  <strong>Timilehin Owolabi</strong>,
-                  <a href="https://ng.linkedin.com/in/chukwudumebi-chukwuma-b481bb275">Chukwudumebi Chukwuma</a>,
-                  <a href="https://github.com/oladele-19">Oladele Omogboyega</a>,
-                  <a href="https://scholar.google.com/citations?user=gU5hEtMAAAAJ&hl=en">Ayokunle Awelewa</a>
-                  <br>
-                  <em>Publishing soon!</em>, 2025
-                  <br>
-                  <a href="https://github.com/iitimii/Coordinated-Control-of-Multi-Quadrotor-Swarms">code</a>
-                  /
-                  <a href="https://drive.google.com/file/d/12H9JaHcGgyAFLYkpVFZ91EULTH33NJkS/view?usp=sharing">PDF
-                    Draft</a>
-                  <p></p>
-                  <p>
-                    Adaptive, optimal, and learning-based control for quadrotor swarms using gym-pybullet-drones.
                   </p>
                 </td>
               </tr>
@@ -477,7 +472,7 @@
                   <br>
                   Ongoing
                   <br>
-                  <a href="https://github.com/iitimii/Autonomous-Delivery-Drone">code</a>
+                  <a href="https://github.com/iitimii/Autonomous-Delivery-Drone">Code</a>
                   <p></p>
                   <p>
                     Currently implementing Gaussian Process Model Predictive Control.
@@ -527,7 +522,7 @@
                   <br>
                   2025
                   <br>
-                  <a href="https://github.com/iitimii/Affordable-3D-Printed-Manipulator">code</a>
+                  <a href="https://github.com/iitimii/Affordable-3D-Printed-Manipulator">Code</a>
                   <br>
                   <em>*Project Lead. All authors were affiliated with Google Developer Groups on Campus, Covenant
                     University.</em>
@@ -577,7 +572,7 @@
                   <br>
                   Ongoing
                   <br>
-                  <a href="https://github.com/iitimii/robot_arm">code</a>
+                  <a href="https://github.com/iitimii/robot_arm">Code</a>
                   <br>
                   <em>*Project Lead. All authors were affiliated with Google Developer Groups on Campus, Covenant
                     University.</em>
@@ -622,7 +617,7 @@
                   <br>
                   2024
                   <br>
-                  <a href="https://github.com/iitimii/ROS2-AutonomousRobotCar">code</a>
+                  <a href="https://github.com/iitimii/ROS2-AutonomousRobotCar">Code</a>
                   <p></p>
                   <p>
                     Simulates a TurtleBot in Gazebo with precise motion control via PID and robust localization using an
@@ -668,7 +663,7 @@
                   <br>
                   2023
                   <br>
-                  <a href="https://github.com/iitimii/Cam-Ai">code</a>
+                  <a href="https://github.com/iitimii/Cam-Ai">Code</a>
                   <p></p>
                   <p>
                     CamAI is an AI-powered camera system that tracks people, recognizes actions in real time, and sends
@@ -711,10 +706,10 @@
                   <br>
                   2023
                   <br>
-                  <a href="https://github.com/iitimii/Brain-Tumour-Segmentation-with-UNet">code</a>
+                  <a href="https://github.com/iitimii/Brain-Tumour-Segmentation-with-UNet">Code</a>
                   /
                   <a
-                    href="https://medium.com/@timiiowolabi/early-brain-tumor-detection-and-classification-with-computer-vision-638a593267b2">blog</a>
+                    href="https://medium.com/@timiiowolabi/early-brain-tumor-detection-and-classification-with-computer-vision-638a593267b2">Blog</a>
                   <br>
                   <em>*Led during internship at Zummit Africa. All authors were affiliated with Zummit Africa.</em>
                   <br>
@@ -754,7 +749,7 @@
                   <br>
                   2023
                   <br>
-                  <a href="https://github.com/iitimii/Semantic-Segmentation-for-Clothing">code</a>
+                  <a href="https://github.com/iitimii/Semantic-Segmentation-for-Clothing">Code</a>
                   <p>A deep learning project that uses a U-Net model to segment clothing items from images of people.
                     Whether it's shirts, pants, or mystery fashion choices, ClothSegNet finds the boundaries so your
                     model doesn't have to guess where the pants end and the fashion crimes begin. </p>

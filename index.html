@@ -404,6 +404,48 @@
           <table
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="humanoid_stop()" onmouseover="humanoid_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='humanoid_image'>
+                      <div class="video-square">
+                        <video muted autoplay loop>
+                          <source src="images/humanoid.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                    <img src='images/humanoid.jpeg' width="160" height="160">
+                  </div>
+
+                  <script type="text/javascript">
+                    function humanoid_start() {
+                      document.getElementById('humanoid_image').style.opacity = "1";
+                    }
+
+                    function humanoid_stop() {
+                      document.getElementById('humanoid_image').style.opacity = "0";
+                    }
+
+                    humanoid_stop();
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/iitimii/Humanoid">
+                    <span class="papertitle">Humanoid</span>
+                  </a>
+                  <br>
+                  <strong>Timi Owolabi</strong>
+                  <br>
+                  Ongoing <em>(The video shows the current state of the project)</em>
+                  <br>
+                  <a href="https://github.com/iitimii/Humanoid">Code</a>
+                  <p></p>
+                  <p>
+                    My current obsession right now. I'm experimenting with model-based and continual learning algorithms on this h1 robot. If you're interested in working together with me on this, please reach out!!
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="aloha_rep_stop()" onmouseover="aloha_rep_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
@@ -436,7 +478,7 @@
                     <span class="papertitle">ALOHA Replication: Bimanual Manipulation with OpenVLA-OFT</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi</strong>,
+                  <strong>Timi Owolabi</strong>,
                   <a href="https://jesse-paul.me/">Jesse-Paul Osemeke</a>,
                   <a href="https://ng.linkedin.com/in/omeyimi-mustapha-7b9202289">Omeyimi Mustapha</a>
                   <br>
@@ -484,7 +526,7 @@
                     <span class="papertitle">Autonomous Drone</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi</strong>
+                  <strong>Timi Owolabi</strong>
                   <br>
                   2025
                   <br>
@@ -525,7 +567,7 @@
                       S</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi*</strong>,
+                  <strong>Timi Owolabi*</strong>,
                   <a href="">Victor Oduopara</a>,
                   <a href="https://github.com/PontentialProgrammer">Ayotomiwa Oyewumi</a>,
                   <a href="">Isaac Odejimi</a>,
@@ -580,7 +622,7 @@
                     <span class="papertitle">VisionPick: Learning Visual Pick-and-Place with JAX and MuJoCo</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi*</strong>,
+                  <strong>Timi Owolabi*</strong>,
                   <a href="https://ng.linkedin.com/in/omeyimi-mustapha-7b9202289">Omeyimi Mustapha</a>,
                   <a href="https://github.com/PontentialProgrammer">Ayotomiwa Oyewumi</a>,
                   <a href="https://github.com/Jojumiloju">Jomiloju Olubosi</a>,
@@ -636,7 +678,7 @@
                     <span class="papertitle">TurtleBot</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi</strong>
+                  <strong>Timi Owolabi</strong>
                   <br>
                   2024
                   <br>
@@ -680,7 +722,7 @@
                     <span class="papertitle">CamAI: Real-Time Action Recognition and Emergency Alerts</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi</strong>,
+                  <strong>Timi Owolabi</strong>,
                   <a href="https://www.nelsonelijah.com/">Nelson Elijah</a>,
                   <a href="https://jesse-paul.me/">Jesse-Paul Osemeke</a>
                   <br>
@@ -722,7 +764,7 @@
                     <span class="papertitle">3D Brain Tumor Segmentation</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi*</strong>,
+                  <strong>Timi Owolabi*</strong>,
                   <a href="https://www.linkedin.com/in/collins-olawale-210b1a125/?originalSubdomain=ng">Collins
                     Olawale</a>,
                   <a href="https://ng.linkedin.com/in/ikeoluwa-ibitoye-04b561268">Ikeoluwa Ibitoye</a>
@@ -768,7 +810,7 @@
                     <span class="papertitle">ClothSegNet: Semantic Segmentation of Clothing via U-Net</span>
                   </a>
                   <br>
-                  <strong>Timilehin Owolabi</strong>
+                  <strong>Timi Owolabi</strong>
                   <br>
                   2023
                   <br>
